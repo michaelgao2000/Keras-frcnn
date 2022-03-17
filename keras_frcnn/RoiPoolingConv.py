@@ -1,5 +1,5 @@
-from keras.engine.topology import Layer
-import keras.backend as K
+from tensorflow.keras.engine.topology import Layer
+import tensorflow.keras.backend as K
 
 if K.backend() == 'tensorflow':
     import tensorflow as tf
