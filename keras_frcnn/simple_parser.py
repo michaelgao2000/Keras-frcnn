@@ -69,10 +69,10 @@ def get_data(input_path):
 	
 	return all_data, classes_count, class_mapping
 
-all_data, classes_count, class_mapping = get_data('../data/haze_images_labels')
+# all_data, classes_count, class_mapping = get_data('../data/haze_images_labels')
 
-print()
-print("all data ", all_data)
-print("classes count ", classes_count)
-print("class mapping ", class_mapping)
+# print()
+# print("all data ", all_data)
+# print("classes count ", classes_count)
+# print("class mapping ", class_mapping)
 
