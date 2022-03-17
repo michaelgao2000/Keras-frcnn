@@ -28,7 +28,7 @@ class RoiPoolingConv(Layer):
 
         self.dim_ordering = K.image_data_format()
         print(self.dim_ordering)
-        assert self.dim_ordering in {'tf', 'th'}, 'dim_ordering must be in {tf, th}'
+        # assert self.dim_ordering in {'tf', 'th'}, 'dim_ordering must be in {tf, th}'
 
         self.pool_size = pool_size
         self.num_rois = num_rois
