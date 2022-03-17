@@ -1,0 +1,8 @@
+vehicle 293 575 455 664 
+vehicle 1263 4 1343 89 
+vehicle 236 335 399 493 
+vehicle 610 275 690 353 
+vehicle 859 198 963 324 
+vehicle 988 684 1092 749 
+vehicle 762 720 814 749 
+vehicle 531 612 616 749 

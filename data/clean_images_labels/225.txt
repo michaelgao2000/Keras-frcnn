@@ -1,0 +1,6 @@
+vehicle 711 33 773 133 
+vehicle 329 0 418 64 
+vehicle 318 124 400 180 
+vehicle 252 239 403 299 
+vehicle 720 275 761 350 
+vehicle 565 272 659 313 
