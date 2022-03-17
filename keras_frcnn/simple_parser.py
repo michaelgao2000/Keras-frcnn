@@ -26,7 +26,7 @@ def get_data(input_path):
 				line_split.insert(0, file_path)
 				line_split.append(class_name)
 				(filename,x1,y1,x2,y2,class_name) = line_split
-				print(line_split)
+				# print(line_split)
 
 				if class_name not in classes_count:
 					classes_count[class_name] = 1
@@ -43,9 +43,9 @@ def get_data(input_path):
 					all_imgs[filename] = {}
 					
 					img = cv2.imread(filename)
-					if img is None:
-						print(filename)
-						print(img)
+					# if img is None:
+					# 	print(filename)
+					# 	print(img)
 					(rows,cols) = img.shape[:2]
 					# all_imgs[filename]['filepath'] = filename
 					all_imgs[filename]['width'] = cols
