@@ -43,6 +43,8 @@ def get_data(input_path):
 					all_imgs[filename] = {}
 					
 					img = cv2.imread(filename)
+					if img is None:
+						print(img)
 					(rows,cols) = img.shape[:2]
 					# all_imgs[filename]['filepath'] = filename
 					all_imgs[filename]['width'] = cols
@@ -67,10 +69,10 @@ def get_data(input_path):
 	
 	return all_data, classes_count, class_mapping
 
-# all_data, classes_count, class_mapping = get_data('../data/clean_images_labels')
+all_data, classes_count, class_mapping = get_data('../data/haze_images_labels')
 
-# print()
-# print("all data ", all_data)
-# print("classes count ", classes_count)
-# print("class mapping ", class_mapping)
+print()
+print("all data ", all_data)
+print("classes count ", classes_count)
+print("class mapping ", class_mapping)
 
