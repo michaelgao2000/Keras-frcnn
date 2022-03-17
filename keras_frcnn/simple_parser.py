@@ -16,8 +16,14 @@ def get_data(input_path):
 		print('Parsing annotation files')
 
 		for line in f:
-			line_split = line.strip().split(',')
+			line_split = line.strip().split(' ')
+			path_list = input_path.strip().split('/')
+			file_path = '../data/' + path_list[len(path_list)-2].split('_')[0] + '_' + path_list[len(path_list)-2].split('_')[1] + '/' + path_list[3].split('.')[0] + '.jpg'
+			class_name = line_split.pop(0)
+			line_split.insert(0, file_path)
+			line_split.append(class_name)
 			(filename,x1,y1,x2,y2,class_name) = line_split
+			print(line_split)
 
 			if class_name not in classes_count:
 				classes_count[class_name] = 1
@@ -35,7 +41,7 @@ def get_data(input_path):
 				
 				img = cv2.imread(filename)
 				(rows,cols) = img.shape[:2]
-				all_imgs[filename]['filepath'] = filename
+				# all_imgs[filename]['filepath'] = filename
 				all_imgs[filename]['width'] = cols
 				all_imgs[filename]['height'] = rows
 				all_imgs[filename]['bboxes'] = []
@@ -58,4 +64,10 @@ def get_data(input_path):
 		
 		return all_data, classes_count, class_mapping
 
+# all_data, classes_count, class_mapping = get_data('../data/clean_images_labels/343.txt')
+
+# print()
+# print("all data ", all_data)
+# print("classes count ", classes_count)
+# print("class mapping ", class_mapping)
 
