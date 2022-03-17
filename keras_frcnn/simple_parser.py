@@ -21,7 +21,7 @@ def get_data(input_path):
 			for line in f:
 				line_split = line.strip().split(' ')
 				path_list = input_path.strip().split('/')
-				file_path = '/data/' + path_list[len(path_list)-1].split('_')[0] + '_' + path_list[len(path_list)-1].split('_')[1] + '/' + filename_no_end + '.jpg'
+				file_path = 'data/' + path_list[len(path_list)-1].split('_')[0] + '_' + path_list[len(path_list)-1].split('_')[1] + '/' + filename_no_end + '.jpg'
 				class_name = line_split.pop(0)
 				line_split.insert(0, file_path)
 				line_split.append(class_name)
