@@ -17,7 +17,7 @@ from keras_frcnn.RoiPoolingConv import RoiPoolingConv
 from keras_frcnn.FixedBatchNormalization import FixedBatchNormalization
 
 def get_weight_path():
-    if K.common.image_dim_ordering() == 'th':
+    if K.image_data_format() == 'th':
         return 'resnet50_weights_th_dim_ordering_th_kernels_notop.h5'
     else:
         return 'resnet50_weights_tf_dim_ordering_tf_kernels.h5'
