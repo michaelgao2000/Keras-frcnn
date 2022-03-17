@@ -13,7 +13,6 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Flatten, Dense, Input, Conv2D, MaxPooling2D, Dropout
 from tensorflow.keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D, TimeDistributed
 from tensorflow.keras.utils import get_source_inputs
-from tensorflow.keras.utils import layer_utils
 from tensorflow.keras.utils.data_utils import get_file
 from tensorflow.keras import backend as K
 from keras_frcnn.RoiPoolingConv import RoiPoolingConv
