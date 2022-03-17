@@ -44,6 +44,7 @@ def get_data(input_path):
 					
 					img = cv2.imread(filename)
 					if img is None:
+						print(filename)
 						print(img)
 					(rows,cols) = img.shape[:2]
 					# all_imgs[filename]['filepath'] = filename
