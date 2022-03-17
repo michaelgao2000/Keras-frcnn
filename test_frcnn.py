@@ -8,10 +8,10 @@ from optparse import OptionParser
 import time
 import tensorflow as tf
 from keras_frcnn import config
-from keras import backend as K
-from keras.layers import Input
-from keras.models import Model
-from keras.backend.tensorflow_backend import set_session
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Input
+from tensorflow.keras.models import Model
+from tensorflow.keras.backend.tensorflow_backend import set_session
 from keras_frcnn import roi_helpers
 
 sys.setrecursionlimit(40000)
